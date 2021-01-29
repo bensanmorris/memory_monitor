@@ -8,13 +8,13 @@ Then specify which tests you want to memory profile (using --gtest_filter like s
 
 ```add_memory_profiling(my_test_executable_target_name "MyTestSuite.Test1;MyTestSuite.Test2")```
 
-# prerequisites
+# Prerequisites
 
 - Python
 - CMake
 - valgrind
 
-# demo
+# Demo
 
 A step by step demo is provided to illustrate:
 
