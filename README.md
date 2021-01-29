@@ -14,7 +14,7 @@ Then specify which tests you want to memory profile (using --gtest_filter like s
 - CMake
 - valgrind
 
-# Demo
+# Demo (Linux)
 
 A step by step demo is provided to illustrate:
 
