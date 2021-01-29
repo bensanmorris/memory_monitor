@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 3.5)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 include(FetchContent)
+include(cmake/Modules/memory_profiling.cmake)
 
 project(memory_test LANGUAGES CXX)
 
@@ -13,4 +15,4 @@ FetchContent_MakeAvailable(googletest)
 add_executable(memory_test test.cpp)
 target_link_libraries(memory_test gtest gtest_main)
 add_test(memory_test memory_test)
-
+add_memory_profiling(memory_test MemoryTests.mem_leak) 
